@@ -68,9 +68,9 @@ def mars_facts():
 
 
 def hemispheres(browser):
-    
-    hemi_base_url = 'https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars'
-    browser.visit(hemi_base_url)
+    hemi_base_url='https://astrogeology.usgs.gov'
+    usgs_url = 'https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars'
+    browser.visit(usgs_url)
     html = browser.html
     soup = bs(html, 'html.parser')
 
